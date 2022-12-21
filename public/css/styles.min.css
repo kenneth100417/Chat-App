@@ -16,8 +16,12 @@ input{
 
 body{
     line-height:1.4;
-    color:#0b0742;
+    color:#1f2f98;
     font-family:Helvetica,Arial,sans-serif;
+}
+
+.text-bar{
+    color: #f9c449;
 }
 
 .page-container{
@@ -36,7 +40,8 @@ label{
     display:block;
     font-size:14px;
     margin-bottom:8px;
-    color:#0b0742;
+    color:#3c4cad;
+    font-weight: bold;
 }
 
 input{
@@ -51,31 +56,33 @@ input.compose-message{
 }
 
 input.compose-message:hover,:focus{
-    border: solid 1px #7C5CBF;
+    border: solid 1px #f3b119;
 }
 
 input.join-input:hover,:focus{
-    border: solid 1px #0b0742;
+    border: solid 1px #eba910;
 }
 
 button{
     cursor:pointer;
     padding:8px;
-    background:#7C5CBF;
+    background:#eba910;
     border:none;
     color:#fff;
     font-size:16px;
-    transition:background .3s ease;
+    transition: background .3s ease;
     border-radius: 15px;
+    font-weight: bold;
 }
 
+
 button:hover{
-    background:#6b47b8;
+    background:#b4820c;
 }
 
 button:disabled{
     cursor:default;
-    background:#7c5cbf94;
+    background:#eec25b;
 }
 
 .centered-form{
@@ -87,9 +94,8 @@ button:disabled{
     align-items:center;
 }
 
-
 .centered-form__box{
-    box-shadow:0 0 17px 1px #1D1F26;
+    box-shadow:0 0 10px 1px #adb1bd;
     background:#F7F7FA;
     padding:24px;
     width:250px;
@@ -114,6 +120,7 @@ button:disabled{
     background:#333744;
     width:225px;
     overflow-y:scroll;
+    font-weight: bold;
 }
 
 h2.room-title{
@@ -146,6 +153,7 @@ h3.list-title{
     font-weight:600;
     font-size:14px;
     margin-right:8px;
+    color: #3c4cad;
 }
 
 .message__meta{
@@ -171,11 +179,15 @@ h3.list-title{
 }
 
 .compose input{
-    border:1px solid #7C5CBF;
+    border:1px solid #eba910;
     width:100%;
     padding:12px;
     margin:0 10px 0 -30px;
     flex-grow:1;
+}
+
+.compose input:hover,:focus{
+    border:2px solid #eba910;
 }
 
 .compose button{
@@ -185,8 +197,10 @@ h3.list-title{
 .room-title{
     font-weight:400;
     font-size:22px;
-    background:#2c2f3a;
-    padding:24px;
+    background:#292c33;
+    padding:18px;
+    color: #f9c449;
+    font-weight: bold;
 }
 
 .list-title{
@@ -194,6 +208,7 @@ h3.list-title{
     font-size:18px;
     margin-bottom:4px;
     padding:12px 24px 0;
+    color: #4adede;
 }
 
 .users{
@@ -216,8 +231,10 @@ span.status{
 }
 
 .message-container{
-    border: solid 1px #7C5CBF;
-    border-radius: 15px;
+    background-color: #eba910;
+    color: rgb(70, 70, 70);
+    font-weight:600;
+    border-radius: 0px 15px 15px 15px;
     padding: 10px;
     max-width: 70%;
     display:flex;
@@ -227,4 +244,8 @@ span.status{
 
 a{
     text-decoration: none;
+}
+
+.position{
+    justify-content: right;
 }
